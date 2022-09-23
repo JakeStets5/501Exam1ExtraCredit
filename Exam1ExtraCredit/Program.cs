@@ -17,9 +17,11 @@ namespace Exam1ExtraCredit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Controller c = new Controller();
             Book b = new Book("", 0, false, new BindingList<int>(), new List<string>());
-            Application.Run(new LibraryView(c, b, new BindingList<Book>()));
+            LibraryView lv = new LibraryView(b, new BindingList<Book>());
+            Controller c = new Controller(lv);
+            lv.SetController(c);
+            Application.Run(lv);
         }
     }
 }

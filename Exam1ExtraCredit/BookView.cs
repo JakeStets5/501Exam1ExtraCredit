@@ -31,30 +31,30 @@ namespace Exam1ExtraCredit
 
         private void uxPageJumpButton_Click(object sender, EventArgs e)
         {
-            _controller.JumpHelper(_book, (int)uxPageNumberUpDown.Value, _libraryView.bookList);
+            _controller.JumpHelper(_book, (int)uxPageNumberUpDown.Value);
             uxBookTextBox.Text = _book.Pages[_book.CurrentPageNumber];
         }
 
         private void uxPageBackward_Click(object sender, EventArgs e)
         {
-            _controller.FlipBackwardHelper(_book, _book.CurrentPageNumber, _libraryView.bookList);
+            _controller.FlipBackwardHelper(_book, _book.CurrentPageNumber);
             uxBookTextBox.Text = _book.Pages[_book.CurrentPageNumber];
         }
 
         private void uxPageForward_Click(object sender, EventArgs e)
         {
-            _controller.FlipForwardHelper(_book, _book.CurrentPageNumber, _libraryView.bookList);
+            _controller.FlipForwardHelper(_book, _book.CurrentPageNumber);
             uxBookTextBox.Text = _book.Pages[_book.CurrentPageNumber];
         }
 
         private void uxAddBookmarkButton_Click(object sender, EventArgs e)
         {
-            _controller.AddBookmarkHelper(_book, _libraryView.bookList);
+            _controller.AddBookmarkHelper(_book);
         }
 
         private void uxRemoveBookMark_Click(object sender, EventArgs e)
         {
-            _controller.RemoveBookmarkHelper(uxBookmarkListBox.SelectedIndex, _book, _libraryView.bookList);
+            _controller.RemoveBookmarkHelper(uxBookmarkListBox.SelectedIndex, _book);
         }
     }
 }

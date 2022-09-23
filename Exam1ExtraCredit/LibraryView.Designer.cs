@@ -74,6 +74,7 @@
             this.Controls.Add(this.uxOpenBookButton);
             this.Name = "LibraryView";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LibraryView_Load);
             this.ResumeLayout(false);
 
         }

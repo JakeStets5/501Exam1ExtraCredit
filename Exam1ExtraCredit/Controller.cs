@@ -14,18 +14,16 @@ namespace Exam1ExtraCredit
     {
         private LibraryView _libraryView;
 
-        private BookView _bookView;
-
         private Book _book;
 
         private int _count = 0;
 
-        public Controller()
+        public Controller(LibraryView lv)
         {
-
+            _libraryView = lv;
         }
 
-        public void AddFromCloud(BindingList<Book> bl)
+        public void AddFromCloud()
         {
             if (File.Exists("..\\..\\Cloud.txt"))
             {
@@ -66,14 +64,14 @@ namespace Exam1ExtraCredit
                     Book b = new Book(bookData[0], Convert.ToInt32(bookData[1]), Convert.ToBoolean(bookData[2]), vs, pageList);
                     if (b.synched)
                     {
-                        bl.Add(b);
+                        _libraryView.bookList.Add(b);
                     }
                 }
                 sr.Close();
             }
         }
 
-        public void SyncHelper(BindingList<Book> bl)
+        public void SyncHelper()
         {
             if (File.Exists("..\\..\\Cloud.txt"))
             {
@@ -118,7 +116,7 @@ namespace Exam1ExtraCredit
                     Book b = new Book(bookData[0], Convert.ToInt32(bookData[1]), Convert.ToBoolean(bookData[2]), vs, pageList);
                     if (!b.synched)
                     {
-                        bl.Add(b);
+                        _libraryView.bookList.Add(b);
                         b.synched = true;
                     }
                     _count += 3;
@@ -127,10 +125,10 @@ namespace Exam1ExtraCredit
             }
         }
 
-        public void SaveHelper(BindingList<Book> bl)
+        public void SaveHelper()
         {
             StreamWriter sw = new StreamWriter("..\\..\\Cloud.txt");
-            foreach(Book b in bl)
+            foreach(Book b in _libraryView.bookList)
             {
                 if (b.synched)
                 {
@@ -167,7 +165,7 @@ namespace Exam1ExtraCredit
             sw.Close();
         }
 
-        public void FlipForwardHelper(Book book, int page, BindingList<Book> bl)
+        public void FlipForwardHelper(Book book, int page)
         {
             if (page == book.Pages.Count - 1)
             {
@@ -177,10 +175,10 @@ namespace Exam1ExtraCredit
             {
                 book.CurrentPageNumber += 1;
             }
-            SaveHelper(bl);
+            SaveHelper();
         }
 
-        public void FlipBackwardHelper(Book book, int page, BindingList<Book> bl)
+        public void FlipBackwardHelper(Book book, int page)
         {
             if (page == 0)
             {
@@ -190,10 +188,10 @@ namespace Exam1ExtraCredit
             {
                 book.CurrentPageNumber -= 1;
             }
-            SaveHelper(bl);
+            SaveHelper();
         }
 
-        public void JumpHelper(Book book, int page, BindingList<Book> bl)
+        public void JumpHelper(Book book, int page)
         {
             if(page > 0 && page <= book.Pages.Count)
             {
@@ -203,10 +201,10 @@ namespace Exam1ExtraCredit
             {
                 MessageBox.Show("can't jump to non-existent page");
             }
-            SaveHelper(bl);
+            SaveHelper();
         }
 
-        public void AddBookmarkHelper(Book book, BindingList<Book> bl)
+        public void AddBookmarkHelper(Book book)
         {
             if(book.Bookmark.Count == 5)
             {
@@ -217,7 +215,7 @@ namespace Exam1ExtraCredit
                 if(book.Bookmark.Count == 0)
                 {
                     book.Bookmark.Add(book.CurrentPageNumber + 1);
-                    SaveHelper(bl);
+                    SaveHelper();
                 }
                 else
                 {
@@ -230,13 +228,13 @@ namespace Exam1ExtraCredit
                     else
                     {
                         book.Bookmark.Add(book.CurrentPageNumber + 1);
-                        SaveHelper(bl);
+                        SaveHelper();
                     }
                 }
             }
         }
 
-        public void RemoveBookmarkHelper(int index, Book book, BindingList<Book> bl)
+        public void RemoveBookmarkHelper(int index, Book book)
         {
             int count = 0;
             int remove = 0; 
@@ -250,7 +248,7 @@ namespace Exam1ExtraCredit
             }
             book.Bookmark.Remove(remove);
             book.Bookmark.ResetBindings();
-            SaveHelper(bl);
+            SaveHelper();
         }
     }
 }
