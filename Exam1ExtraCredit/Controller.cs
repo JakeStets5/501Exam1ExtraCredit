@@ -102,7 +102,7 @@ namespace Exam1ExtraCredit
                         }
                     }
                     string pageData = sr.ReadLine();
-                    if (readLine2 == "")
+                    if (pageData == "")
                     {
                         break;
                     }
@@ -160,6 +160,7 @@ namespace Exam1ExtraCredit
                         }
                         count++;
                     }
+                    sw.WriteLine();
                 }
             }
             sw.Close();
