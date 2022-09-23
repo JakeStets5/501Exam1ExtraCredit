@@ -16,14 +16,11 @@ namespace Exam1ExtraCredit
 
         private Book _book;
 
-        private LibraryView _libraryView;
-
         public BookView(Book b, Controller c, LibraryView lv)
         {
             InitializeComponent();
             _controller = c;
-            _book = b;
-            _libraryView = lv;  
+            _book = b; 
             uxBookTextBox.Text = b.Pages[b.CurrentPageNumber];
             uxPageNumberUpDown.Value = b.CurrentPageNumber + 1;
             uxBookmarkListBox.DataSource = _book.Bookmark;
