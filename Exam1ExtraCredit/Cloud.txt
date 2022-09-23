@@ -1,8 +1,8 @@
 tg,4,True
 1,5,4,2
 Hi,my,name,is,jake
-tf,0,True
-
+tf,2,True
+4
 lsdkjf,sldkf,lskdjh,lskdhjf
 th,1,True
 

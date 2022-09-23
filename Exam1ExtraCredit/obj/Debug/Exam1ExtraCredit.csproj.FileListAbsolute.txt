@@ -22,3 +22,15 @@ C:\Users\JakeS\OneDrive\Desktop\CIS501\Exam1ExtraCreditRepo\Exam1ExtraCredit\obj
 C:\Users\JakeS\OneDrive\Desktop\CIS501\Exam1ExtraCreditRepo\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.csproj.CoreCompileInputs.cache
 C:\Users\JakeS\OneDrive\Desktop\CIS501\Exam1ExtraCreditRepo\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.exe
 C:\Users\JakeS\OneDrive\Desktop\CIS501\Exam1ExtraCreditRepo\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.pdb
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\bin\Debug\Exam1ExtraCredit.exe.config
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\bin\Debug\Exam1ExtraCredit.exe
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\bin\Debug\Exam1ExtraCredit.pdb
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.csproj.AssemblyReference.cache
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.csproj.SuggestedBindingRedirects.cache
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.BookView.resources
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.LibraryView.resources
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.Properties.Resources.resources
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.csproj.GenerateResource.cache
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.csproj.CoreCompileInputs.cache
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.exe
+C:\Users\huffm\Source\Repos\501Exam1ExtraCredit\Exam1ExtraCredit\obj\Debug\Exam1ExtraCredit.pdb

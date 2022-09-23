@@ -73,7 +73,7 @@
             this.Controls.Add(this.uxSyncButton);
             this.Controls.Add(this.uxOpenBookButton);
             this.Name = "LibraryView";
-            this.Text = "Form1";
+            this.Text = "Library View";
             this.Load += new System.EventHandler(this.LibraryView_Load);
             this.ResumeLayout(false);
 
