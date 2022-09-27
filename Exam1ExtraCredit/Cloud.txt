@@ -1,9 +1,12 @@
-tg,4,True
-1,5,4,2
-Hi,my,name,is,jake
-tf,2,True
-4
-lsdkjf,sldkf,lskdjh,lskdhjf
-th,1,True
+The Tale of CIS 501,0,True
 
-idfj,sohdf
+This is the tale of CIS 501., For testing purposes we are only putting a couple sentences per page. Like this page only has 2 sentences!, That doesn't mean- though- that the book can't keep going!, See now we are on page 4. Try setting a bookmark! Sadly: there are no other pages after this :(
+Diary of a Wimpy Kid,2,True
+4,3
+This is in fact no the ACTUALLY Diary of Wimpy Kid book., Also: who even thought of naming a book series "Diary of a Wimpy Kid"?, I guess some things just catch
+My Book,0,True
+
+This is my book. If I wanted to I could write about anything., For example: I could write that I love to cook (even though I don't)., Then my book would be fictional., I guess if I was cooking aliens then it would be sci-fi. Either way I really enjoy writing books., Especially those that are in the cloud!
+Jorge,0,True
+1
+This book is all about Jorge., He is the best professor I have ever had., This will be my third class with him because I have taken 200 308 and now 501!, Each time I have a class with Jorge I enjoy attending because of his funny jokes!, Thanks for all you do for us students
